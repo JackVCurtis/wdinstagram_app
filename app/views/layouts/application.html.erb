@@ -7,6 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+  <%= link_to "All Photos", entries_path %>
+  <%= link_to "New Photo", new_entry_path %>
+</header>
 
 <%= yield %>
 

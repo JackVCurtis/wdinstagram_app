@@ -1,0 +1,10 @@
+<article>
+<%= image_tag @entry.photo_url, alt: "This is some alt text" %>
+
+<p>
+  Author: <%= @entry.author %><br>
+  Date Taken: <%= @entry.date_taken.to_formatted_s(:long_ordinal) %>
+</p>
+</article>
+<hr>
+<%= render 'entry_footer' %>
