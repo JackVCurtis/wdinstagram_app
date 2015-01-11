@@ -6,7 +6,7 @@
 <% @entries.each do |entry| %>  
   <tr>
     <td><%= entry.author %></td>
-    <td><%= entry.date_taken.to_formatted_s(:short) %></td>
+    <td><%= entry.date_taken.to_formatted_s(:long) %></td>
     <td><%= link_to "View", entry %></td>
     <td><%= link_to "Edit", edit_entry_path(entry) %></td
   </tr>
